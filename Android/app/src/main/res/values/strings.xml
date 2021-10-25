@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android</string>
+    <string name="all">All</string>
+    <string name="login">Login</string>
+    <string name="psw">Password *</string>
+    <string name="username">Username *</string>
+    <string name="enter">Enter</string>
+    <string name="remember_login">Remember login?</string>
+    <string name="welcome">Welcome</string>
 </resources>

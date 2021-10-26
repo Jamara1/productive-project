@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:drawable="@color/white_500" />
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:drawable="@drawable/background_logo"
+        android:gravity="center"
+        tools:ignore="UnusedAttribute" />
+    <item
+        android:width="150dp"
+        android:height="150dp"
+        android:gravity="center"
+        tools:ignore="UnusedAttribute">
+        <bitmap android:src="@drawable/logo" />
+    </item>
+</layer-list>

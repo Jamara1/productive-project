@@ -36,7 +36,6 @@
                 android:background="@color/white_500"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="30dp"
                 tools:ignore="UselessParent">
 
                 <TextView
@@ -112,6 +111,7 @@
                         android:id="@+id/cb_remember"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
                         android:background="@drawable/background_blue_dark"
                         android:checked="true"
                         android:minHeight="35dp"

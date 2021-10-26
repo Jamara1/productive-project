@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.CheckBox;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -25,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        SharedPreferences preferences = getSharedPreferences("data", MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences(getString(R.string.key), MODE_PRIVATE);
         editor = preferences.edit();
 
         lyUsername = findViewById(R.id.ly_username);
@@ -35,6 +36,9 @@ public class LoginActivity extends AppCompatActivity {
         psw = findViewById(R.id.edt_psw);
 
         remember = findViewById(R.id.cb_remember);
+
+        Button login = findViewById(R.id.btn_login);
+        login.setOnClickListener(view -> validator());
     }
 
     private void getData() {
@@ -42,12 +46,18 @@ public class LoginActivity extends AppCompatActivity {
         strPsw = Objects.requireNonNull(psw.getText()).toString();
     }
 
+    private void serClear() {
+        username.setText("");
+        psw.setText("");
+    }
+
     private void logOn() {
         if (remember.isChecked()) {
-            editor.putBoolean("status", true);
+            editor.putBoolean(getString(R.string.key_login), true);
             editor.apply();
         }
         startActivity(new Intent(this, HomeActivity.class));
+        serClear();
     }
 
     private void validator() {

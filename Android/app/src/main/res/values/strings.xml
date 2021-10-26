@@ -7,4 +7,6 @@
     <string name="enter">Enter</string>
     <string name="remember_login">Remember login?</string>
     <string name="welcome">Welcome</string>
+    <string name="key">data</string>
+    <string name="key_login">status</string>
 </resources>

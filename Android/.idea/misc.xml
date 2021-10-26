@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/drawable/outline_key_20.xml" value="1.4854166666666666" />
         <entry key="app/src/main/res/drawable/outline_send_24.xml" value="1.4854166666666666" />
         <entry key="app/src/main/res/drawable/splash_screen.xml" value="1.4875" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="1.4229166666666666" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="1.4810996563573884" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="1.25" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="1.5" />
